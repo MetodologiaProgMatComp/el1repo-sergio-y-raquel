@@ -13,8 +13,6 @@ public class Circle {
         radius = 1.0;
         color = "red";
     }
-
-
     public Circle(double r) {
 
     }
