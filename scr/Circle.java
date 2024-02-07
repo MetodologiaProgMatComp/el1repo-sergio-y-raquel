@@ -11,7 +11,7 @@ public class Circle {
     // Constructs a Circle instance with default value for radius and color */
     public Circle() {
         radius = 1.0;
-        color = "blue";
+        color = "green";
     }
 
 
