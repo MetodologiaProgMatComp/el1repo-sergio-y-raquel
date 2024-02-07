@@ -8,9 +8,14 @@ public class Circle {
     private String color;
     // Constructors (overloaded)
     // Constructs a Circle instance with default value for radius and color */
-    public Circle(){
-        radius=1.0;
-        color="red";
+    public Circle() {
+        radius = 1.0;
+        color = "red";
+    }
+
+
+    public Circle(double r){
+
     }
 
 
