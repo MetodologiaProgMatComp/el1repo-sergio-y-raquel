@@ -7,21 +7,31 @@ public class Circle {
     private double radius;
     private String color;
 
-    // Constructors (overloaded)
-    // Constructs a Circle instance with default value for radius and color */
+    // Constructores
+
     public Circle() {
         radius = 1.0;
         color = "red";
     }
     public Circle(double r){
         radius=r;
-        color="red";
+        color="green";
     }
+    public Circle(double r, String c){
+        radius=r;
+        color=c;
+    }
+
+    //Getters
+
     public double getRadius(){
         return radius;
     }
     public double getArea(){
         return radius*radius*Math.PI;
+    }
+    public String getColor(){
+        return color;
     }
 
 
