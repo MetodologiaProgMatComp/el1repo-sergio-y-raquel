@@ -6,4 +6,3 @@ Tras ella, en la siguiente semana "S04 - POO - UML/Laboratorio" se abrirá la se
 
 En este repositorio deberá dejarse el proyecto completo con todos los ejercicios y tests subidos antes del 28 de febrero de 2024.
 
-testx
