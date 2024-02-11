@@ -10,12 +10,12 @@ public class Circle {
     // Constructores
 
     public Circle() {
-        radius = 1.0;
-        color = "red";
+        this.radius = 1.0;
+        this.color = "red";
     }
     public Circle(double r){
         this.radius=r;
-        color="green";
+        this.color="green";
     }
     public Circle(double r, String c){
         this.radius=r;
@@ -41,5 +41,10 @@ public class Circle {
     }
     public void setColor (String newColor){
         color=newColor;
+    }
+
+    //Método ToString
+    public String toString() {
+        return "Circle[radius= " + radius + ", color= " + color + "]";
     }
 }
