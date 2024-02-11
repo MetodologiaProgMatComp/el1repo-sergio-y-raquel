@@ -14,12 +14,12 @@ public class Circle {
         color = "red";
     }
     public Circle(double r){
-        radius=r;
+        this.radius=r;
         color="green";
     }
     public Circle(double r, String c){
-        radius=r;
-        color=c;
+        this.radius=r;
+        this.color=c;
     }
 
     //Getters
