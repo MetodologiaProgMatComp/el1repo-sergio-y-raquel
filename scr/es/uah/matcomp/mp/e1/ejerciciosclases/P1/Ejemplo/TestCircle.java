@@ -1,4 +1,6 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
+package es.uah.matcomp.mp.e1.ejerciciosclases.P1.Ejemplo;
+
+import es.uah.matcomp.mp.e1.ejerciciosclases.P1.Ejemplo.Circle;
 
 public class TestCircle {
     public static void main(String[] args){

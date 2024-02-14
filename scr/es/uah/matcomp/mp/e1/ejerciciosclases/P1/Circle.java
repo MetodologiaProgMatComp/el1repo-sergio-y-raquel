@@ -1,52 +1,31 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
-/***
- * The Circle Class models a circle with a radius and color
- */
-
 public class Circle {
-    // private instance variable, not accessible from outside this class
-    private double radius;
-    private String color;
+    double radius = 1.0;
 
-    // Constructores
-
-    public Circle() {
-        this.radius = 1.0;
-        this.color = "red";
-    }
-    public Circle(double r){
-        this.radius=r;
-        this.color="green";
-    }
-    public Circle(double r, String c){
-        this.radius=r;
-        this.color=c;
+    public void circle() {
+        radius = 1.0;
     }
 
-    //Getters
+    public void circle(double rad) {
+        this.radius = rad;
+    }
 
-    public double getRadius(){
+    public double getRadius() {
         return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
     public double getArea(){
         return radius*radius*Math.PI;
     }
-    public String getColor(){
-        return color;
-    }
 
-    //Setters
-
-    public void setRadius(double newRadius){
-        radius=newRadius;
+    public double getCircumference() {
+        return 2 * Math.PI * radius;
     }
-    public void setColor (String newColor){
-        color=newColor;
-    }
-
-    //Método ToString
     public String toString() {
-        return "Circle[radius= " + radius + ", color= " + color + "]";
+        return "Circle[radius= " + radius + "]";
     }
 }

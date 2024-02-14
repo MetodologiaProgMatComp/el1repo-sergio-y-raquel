@@ -4,8 +4,8 @@ public class TestMain8 {
 
     public static void main(String[] args) {
         // Test constructors and toString()
-        Time t1 = new Time();
-        t1.time(1, 2, 3);
+        Time t1 = new Time(1, 2, 3);
+        //t1.time(1, 2, 3);
         System.out.println(t1); // toString()
         // Test Setters and Getters
         t1.setHour(4);
