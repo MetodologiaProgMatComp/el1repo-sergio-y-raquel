@@ -5,8 +5,7 @@ public class TestMain3 {
     public static void main(String[] args) {
         // Test constructors and toString()
         // You need to append a 'f' or 'F' to a float literal
-        Rectangle r1 = new Rectangle();
-        r1.rectangle(1.2f, 3.4f);
+        Rectangle r1 = new Rectangle(1.2f, 3.4f);
         System.out.println(r1); // toString()
         Rectangle r2 = new Rectangle(); // default constructor
         System.out.println(r2);

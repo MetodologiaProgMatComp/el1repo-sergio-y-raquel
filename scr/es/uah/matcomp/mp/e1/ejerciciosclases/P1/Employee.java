@@ -6,12 +6,14 @@ public class Employee {
     String lastName;
     int salary;
 
-    public void employee(int id, String FN, String LN, int Sal) {
-        this.firstName = FN;
+    /////////////////
+    public Employee(int id, String firstName, String lastName, int salary) {
         this.id = id;
-        this.lastName = LN;
-        this.salary = Sal;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
     }
+    //////////////
 
     public int getId() {
         return id;
