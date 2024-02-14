@@ -1,28 +1,32 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P2.AutorMultiple;
 
+import java.util.Arrays;
+
 public class Book {
     String name;
-    Author author;
+    Author[] authors;
     Double price;
     int qty = 0;
-    public Book(String n, Author a, Double p){
-        this.name=n;
-        this.author=a;
-        this.price=p;
+
+    public Book(String n, Author[] a, Double p) {
+        this.name = n;
+        this.authors = a;
+        this.price = p;
     }
-    public Book(String n, Author a, Double p, int q){
-        this.name=n;
-        this.author=a;
-        this.price=p;
-        this.qty=q;
+
+    public Book(String n, Author[] a, Double p, int q) {
+        this.name = n;
+        this.authors = a;
+        this.price = p;
+        this.qty = q;
     }
 
     public String getName() {
         return name;
     }
 
-    public Author getAuthor() {
-        return author;
+    public Author[] getAuthor() {
+        return authors;
     }
 
     public Double getPrice() {
@@ -44,18 +48,19 @@ public class Book {
     public String toString() {
         return "Book{" +
                 "name='" + name + '\'' +
-                ", author=" + author +
+                ", author=" + Arrays.toString(authors) +
                 ", price=" + price +
                 ", qty=" + qty +
                 '}';
     }
-    public String getAuthorName(){
-        return author.getName();
-    }
-    public String getAuthorEmail(){
-        return author.getEmail();
-    }
-    public char getAuthorGender(){
-        return author.getGender();
+    public String getAuthorNames() {
+        int contador = 0;
+        String nombres=null;
+        while (authors[contador] != null) {
+            String nombre=authors[contador].getName();
+            nombres+=","+nombre;
+            contador++;
+        }
+        return nombres;
     }
 }
