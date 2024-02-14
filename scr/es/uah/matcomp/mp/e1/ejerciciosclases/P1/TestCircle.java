@@ -1,6 +1,8 @@
+package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
+
 public class TestCircle {
     public static void main(String[] args){
-        Circle c1=new Circle ();
+        Circle c1=new Circle();
         System.out.println("The circle has a radius of "+c1.getRadius()+" and area of "+c1.getArea()+ " and is "+c1.getColor());
 
         Circle c2=new Circle(2.0);
