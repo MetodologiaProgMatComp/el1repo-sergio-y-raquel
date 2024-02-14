@@ -34,7 +34,7 @@ public class Date {
     public void setYear(int year) {
         this.year = year;
     }
-    public void setDate(int day, int month, int year){
+    public void setDate(int day, int month, int year){  // Modificar una instacia ya creada con el constructor date()
         this.day=day;
         this.month=month;
         this.year=year;

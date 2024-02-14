@@ -59,34 +59,43 @@ public class Time {
         }
         return hours+":"+minutes+":"+seconds;
     }
-    public String nextSecond(){
-        second+=1;
-        if (second==60){
-            minute+=1;
-            second=0;
+
+    public Time nextSecond(){
+        Time obj = new Time();
+        obj.second=second;
+        obj.hour=hour;
+        obj.minute=minute;
+        obj.second+=1;
+        if (obj.second==60){
+            obj.minute+=1;
+            obj.second=0;
         }
-        if (minute==60) {
-            hour += 1;
-            minute = 0;
+        if (obj.minute==60) {
+            obj.hour += 1;
+            obj.minute = 0;
         }
-        if (hour==24) {
-            hour=0;
+        if (obj.hour==24) {
+            obj.hour=0;
         }
-        return toString();
+        return obj;
     }
-    public String previousSecond(){
-        second-=1;
-        if (second<0){
-            minute-=1;
-            second=59;
+    public Time previousSecond(){
+        Time obj = new Time();
+        obj.second=second;
+        obj.hour=hour;
+        obj.minute=minute;
+        obj.second-=1;
+        if (obj.second<0){
+            obj.minute-=1;
+            obj.second=59;
         }
-        if (minute<0) {
-            hour -= 1;
-            minute = 59;
+        if (obj.minute<0) {
+            obj.hour -= 1;
+            obj.minute = 59;
         }
-        if (hour<0) {
-            hour=23;
+        if (obj.hour<0) {
+            obj.hour=23;
         }
-        return toString();
+        return obj;
     }
 }
