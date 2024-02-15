@@ -18,6 +18,7 @@ class CircleTest {
         c.setRadius(8.0);
         assertNotEquals(c.radius, 0.0);
         assertTrue(c.radius > 0);
+        assertDoesNotThrow(()-> c.setRadius(8.0));
     }
 
     @org.junit.jupiter.api.Test
