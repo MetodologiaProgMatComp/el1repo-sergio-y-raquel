@@ -5,15 +5,12 @@ public class InvoiceItem {
     String desc;
     int qty;
     double unitPrice;
-
-    //////////////
-    public InvoiceItem(String ID, String desc, int qty, double unitPrice) {
-        this.ID = ID;
-        this.desc = desc;
-        this.qty = qty;
-        this.unitPrice = unitPrice;
+    public void invoiceItem(String ID,String desc,int qty,double uP){
+        this.desc=desc;
+        this.ID=ID;
+        this.qty=qty;
+        this.unitPrice=uP;
     }
-    ////////////////
 
     public String getID() {
         return ID;
@@ -38,9 +35,8 @@ public class InvoiceItem {
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
     }
-
-    public double getTotal() {
-        return unitPrice * qty;
+    public double getTotal(){
+        return unitPrice*qty;
     }
 
     public String toString() {

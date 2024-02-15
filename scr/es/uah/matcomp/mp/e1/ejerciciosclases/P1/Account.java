@@ -5,18 +5,16 @@ public class Account {
     String name;
     int balance = 0;
 
-    /////////////
-    public Account(String id, String name) {
-        Id = id;
+    public void account(String Id, String name) {
+        this.Id = Id;
         this.name = name;
     }
-    /////////////
-    public Account(String id, String name, int balance) {
-        Id = id;
+
+    public void account(String Id, String name, int balance) {
+        this.Id = Id;
         this.name = name;
         this.balance = balance;
     }
-    ////////
 
     public String getId() {
         return Id;

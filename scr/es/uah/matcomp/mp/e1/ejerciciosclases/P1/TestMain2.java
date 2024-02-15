@@ -3,7 +3,8 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 public class TestMain2 {
     public static void main(String[] args) {
         // Test Constructors and toString()
-        Circle c1 = new Circle(1.1);
+        Circle c1 = new Circle();
+        c1.circle(1.1);
         System.out.println(c1); // toString()
         Circle c2 = new Circle(); // default constructor
         System.out.println(c2);

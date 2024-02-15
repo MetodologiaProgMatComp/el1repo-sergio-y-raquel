@@ -5,13 +5,12 @@ public class Time {
     int minute;
     int second;
 
-    ///////////
     public Time(int h, int m, int s) {
         this.hour=h;
         this.minute=m;
         this.second=s;
     }
-    ////////////
+
 
     public int getHour() {
         return hour;

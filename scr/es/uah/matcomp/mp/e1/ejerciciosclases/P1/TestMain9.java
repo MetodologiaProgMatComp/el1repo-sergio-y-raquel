@@ -3,7 +3,8 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 public class TestMain9 {
     public static void main(String[] args) {
         // Test constructor and toString()
-        Ball ball = new Ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
+        Ball ball = new Ball();
+        ball.ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
         System.out.println(ball); // toString()
         // Test Setters and Getters
         ball.setX(80.0f);

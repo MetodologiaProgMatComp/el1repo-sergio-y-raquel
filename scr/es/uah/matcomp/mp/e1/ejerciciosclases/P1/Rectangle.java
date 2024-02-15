@@ -4,17 +4,15 @@ public class Rectangle {
     float lenght=1.0f;
     float width=1.0f;
 
-    /////////////////
-    public Rectangle(float lenght, float width) {
-        this.lenght = lenght;
-        this.width = width;
-    }
-    ///////////////
-    public Rectangle(){
+    public void rectangle(){
         this.lenght=1.0f;
         this.width=1.0f;
     }
-    ////////////////
+
+    public void rectangle(float len,float wid){
+        this.lenght=len;
+        this.width=wid;
+    }
 
     public float getLength() {
         return lenght;
