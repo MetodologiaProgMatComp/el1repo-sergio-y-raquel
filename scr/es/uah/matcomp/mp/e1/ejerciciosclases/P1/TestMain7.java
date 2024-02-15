@@ -4,8 +4,7 @@ public class TestMain7 {
 
     public static void main(String[] args) {
         // Test constructor and toString()
-        Date d1 = new Date();
-        d1.date(1, 2, 2014);
+        Date d1 = new Date(1, 2, 2014);
         System.out.println(d1); // toString()
         // Test Setters and Getters
         d1.setMonth(12);
