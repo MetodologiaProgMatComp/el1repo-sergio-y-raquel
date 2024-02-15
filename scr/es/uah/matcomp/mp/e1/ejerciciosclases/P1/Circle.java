@@ -3,13 +3,15 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 public class Circle {
     double radius = 1.0;
 
-    public void circle() {
-        radius = 1.0;
+    ///////////
+
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
-    public void circle(double rad) {
-        this.radius = rad;
+    public Circle() {
     }
+    ///////////
 
     public double getRadius() {
         return radius;
