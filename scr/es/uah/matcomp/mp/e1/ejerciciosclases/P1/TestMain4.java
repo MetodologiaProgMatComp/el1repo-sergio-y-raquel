@@ -3,8 +3,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 public class TestMain4 {
     public static void main(String[] args) {
         // Test constructor and toString()
-        Employee e1 = new Employee();
-        e1.employee(8, "Peter", "Tan", 2500);
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
         System.out.println(e1); // toString();
         // Test Setters and Getters
         e1.setSalary(999);

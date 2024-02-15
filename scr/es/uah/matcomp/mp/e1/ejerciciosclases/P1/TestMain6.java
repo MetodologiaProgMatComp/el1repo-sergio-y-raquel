@@ -4,11 +4,9 @@ public class TestMain6 {
 
     public static void main(String[] args) {
         // Test constructor and toString()
-        Account a1 = new Account();
-        a1.account("A101", "Tan Ah Teck", 88);
+        Account a1 = new Account("A101", "Tan Ah Teck", 88);
         System.out.println(a1); // toString();
-        Account a2 = new Account();
-        a2.account("A102", "Kumar");// default balance
+        Account a2 = new Account("A102", "Kumar");
         System.out.println(a2);
         // Test Getters
         System.out.println("ID: " + a1.getId());

@@ -7,13 +7,15 @@ public class Ball {
     float xDelta;
     float yDelta;
 
-    public void ball(float x, float y, int radius, float xDelta, float yDelta) {
+    ////////////
+    public Ball(float x, float y, int radius, float xDelta, float yDelta) {
         this.x = x;
-        this.radius = radius;
         this.y = y;
+        this.radius = radius;
         this.xDelta = xDelta;
         this.yDelta = yDelta;
     }
+    //////////////
 
     public float getX() {
         return x;
