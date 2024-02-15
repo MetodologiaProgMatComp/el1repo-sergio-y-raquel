@@ -43,7 +43,7 @@ public class Account {
         if (amount <= balance) {
             balance -= amount;
         } else {
-            System.out.println("Amount exeeded balance");
+            System.out.println("Amount exceeded balance");
         }
         return balance;
     }
@@ -51,7 +51,8 @@ public class Account {
     public int transferTo(Account another,int amount) {
         if (amount <= balance) {
             balance -= amount;
-            another.setBalance(amount);
+            int balanceAnother = another.getBalance();
+            another.setBalance(balanceAnother + amount);
         } else {
             System.out.println("Amount exceeded balance");
         }
@@ -60,8 +61,8 @@ public class Account {
 
     public String toString() {
         return "Account{" +
-                "Id='" + Id + '\'' +
-                ", name='" + name + '\'' +
+                "Id= " + Id +
+                ", name= " + name +
                 ", balance=" + balance +
                 '}';
     }
