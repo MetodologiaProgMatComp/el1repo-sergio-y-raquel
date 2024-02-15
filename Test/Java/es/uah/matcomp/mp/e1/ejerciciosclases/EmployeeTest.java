@@ -5,16 +5,14 @@ import es.uah.matcomp.mp.e1.ejerciciosclases.P1.Employee;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeTest {
-
+    Employee em  = new Employee();
     @org.junit.jupiter.api.Test
     void employee() {
-        Employee em  = new Employee();
         assertDoesNotThrow(()->em.employee(1,"Juan","Rodriguez",300));
     }
 
     @org.junit.jupiter.api.Test
     void getId() {
-        Employee em  = new Employee();
         int id = em.getId();
         assertNotEquals(id, 0);
         assertTrue((id>0),"Error, es menor o igual a 0");
@@ -22,9 +20,6 @@ class EmployeeTest {
 
     @org.junit.jupiter.api.Test
     void getFirstName() {
-        /***
-         * Preguntar al profesor que que "assert" hay que usar
-         */
     }
 
     @org.junit.jupiter.api.Test
