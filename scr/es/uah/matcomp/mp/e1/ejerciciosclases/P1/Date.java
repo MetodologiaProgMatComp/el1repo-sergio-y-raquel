@@ -1,9 +1,9 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Date {
-    int day;
-    int month;
-    int year;
+    private int day;
+    private int month;
+    private int year;
 
     ///////////////////////
 

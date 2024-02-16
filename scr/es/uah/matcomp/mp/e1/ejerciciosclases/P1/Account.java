@@ -1,9 +1,9 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Account {
-    String Id;
-    String name;
-    int balance = 0;
+    private String Id;
+    private String name;
+    private int balance = 0;
 
     ///////////
     public Account(String id, String name) {

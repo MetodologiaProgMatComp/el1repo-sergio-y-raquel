@@ -1,10 +1,10 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Employee {
-    int id;
-    String firstName;
-    String lastName;
-    int salary;
+    private int id;
+    private String firstName;
+    private String lastName;
+    private int salary;
 
     ////////////////////
     public Employee(int id, String firstName, String lastName, int salary) {

@@ -1,7 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Circle {
-    double radius = 1.0;
+    private double radius = 1.0;
 
     ///////////
 

@@ -1,11 +1,11 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Ball {
-    float x;
-    float y;
-    int radius;
-    float xDelta;
-    float yDelta;
+    private float x;
+    private float y;
+    private int radius;
+    private float xDelta;
+    private float yDelta;
 
     ////////////
     public Ball(float x, float y, int radius, float xDelta, float yDelta) {

@@ -10,7 +10,7 @@ class RectangleTest {
     void getLength() {
         Rectangle rectangle = new Rectangle();
         float l = rectangle.getLength();
-        assertNotEquals(rectangle.lenght, 0L);
+        assertNotEquals(l, 0L);
         assertTrue(l > 0L);
     }
 

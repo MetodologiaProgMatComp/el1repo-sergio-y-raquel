@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Rectangle {
-    float lenght=1.0f;
-    float width=1.0f;
+    private float lenght=1.0f;
+    private float width=1.0f;
 
     //////////////////
     public Rectangle() {
