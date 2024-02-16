@@ -16,8 +16,9 @@ class CircleTest {
     void setRadius() {
         Circle c = new Circle();
         c.setRadius(8.0);
-        assertNotEquals(c.radius, 0.0);
-        assertTrue(c.radius > 0);
+        double radio=c.getRadius();
+        assertNotEquals(radio, 0.0);
+        assertTrue(radio > 0);
         assertDoesNotThrow(()-> c.setRadius(8.0));
     }
 
