@@ -61,6 +61,7 @@ class TimeTest {
     void setTime() {
         Time time=new Time(3,5,30);
         time.setTime(14,30,23);
+
     }
 
     @Test
