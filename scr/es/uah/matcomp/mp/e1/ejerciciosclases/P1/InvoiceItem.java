@@ -45,8 +45,7 @@ public class InvoiceItem {
     }
 
     public String toString() {
-        return "InvoiceItem{" +
-                "ID= "+ ID +
+        return "InvoiceItem{" + "ID= "+ ID +
                 ", desc= " + desc +
                 ", qty= " + qty +
                 ", unitPrice= " + unitPrice +
