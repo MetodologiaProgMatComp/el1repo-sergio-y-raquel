@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Account {
-    private String Id;
-    private String name;
+    private final String Id;
+    private final String name;
     private int balance = 0;
 
     ///////////
@@ -48,7 +48,7 @@ public class Account {
         return balance;
     }
 
-    public int transferTo(Account another,int amount) {
+    public int transferTo(Account another, int amount) {
         if (amount <= balance) {
             balance -= amount;
             int balanceAnother = another.getBalance();

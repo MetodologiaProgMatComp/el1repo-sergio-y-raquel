@@ -19,7 +19,7 @@ class CircleTest {
         double radio=c.getRadius();
         assertNotEquals(radio, 0.0);
         assertTrue(radio > 0);
-        assertDoesNotThrow(()-> c.setRadius(8.0));
+        assertDoesNotThrow(() -> c.setRadius(8.0));
     }
 
     @org.junit.jupiter.api.Test

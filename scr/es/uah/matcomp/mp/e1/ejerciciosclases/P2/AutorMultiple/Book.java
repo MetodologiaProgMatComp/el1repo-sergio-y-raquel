@@ -53,12 +53,13 @@ public class Book {
                 ", qty=" + qty +
                 '}';
     }
+
     public String getAuthorNames() {
         int contador = 0;
-        String nombres=null;
+        String nombres = null;
         while (authors[contador] != null) {
-            String nombre=authors[contador].getName();
-            nombres+=","+nombre;
+            String nombre = authors[contador].getName();
+            nombres += "," + nombre;
             contador++;
         }
         return nombres;

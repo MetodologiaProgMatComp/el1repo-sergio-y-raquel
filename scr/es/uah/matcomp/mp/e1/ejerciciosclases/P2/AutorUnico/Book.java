@@ -5,16 +5,18 @@ public class Book {
     Author author;
     Double price;
     int qty = 0;
-    public Book(String n,Author a,Double p){
-        this.name=n;
-        this.author=a;
-        this.price=p;
+
+    public Book(String n, Author a, Double p) {
+        this.name = n;
+        this.author = a;
+        this.price = p;
     }
-    public Book(String n,Author a,Double p,int q){
-        this.name=n;
-        this.author=a;
-        this.price=p;
-        this.qty=q;
+
+    public Book(String n, Author a, Double p, int q) {
+        this.name = n;
+        this.author = a;
+        this.price = p;
+        this.qty = q;
     }
 
     public String getName() {
@@ -49,13 +51,16 @@ public class Book {
                 ", qty=" + qty +
                 '}';
     }
-    public String getAuthorName(){
+
+    public String getAuthorName() {
         return author.getName();
     }
-    public String getAuthorEmail(){
+
+    public String getAuthorEmail() {
         return author.getEmail();
     }
-    public char getAuthorGender(){
+
+    public char getAuthorGender() {
         return author.getGender();
     }
 }

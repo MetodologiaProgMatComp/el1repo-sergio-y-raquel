@@ -2,7 +2,8 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BallTest {
 

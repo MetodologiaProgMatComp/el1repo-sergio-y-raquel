@@ -32,18 +32,18 @@ public class Circle {
         return radius;
     }
 
+    public void setRadius(double newRadius) {
+        radius = newRadius;
+    }
+
     public double getArea() {
         return radius * radius * Math.PI;
     }
 
-    public String getColor() {
-        return color;
-    }
-
     //Setters
 
-    public void setRadius(double newRadius) {
-        radius = newRadius;
+    public String getColor() {
+        return color;
     }
 
     public void setColor(String newColor) {

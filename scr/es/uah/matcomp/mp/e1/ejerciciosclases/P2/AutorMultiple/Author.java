@@ -4,11 +4,13 @@ public class Author {
     String name;
     String email;
     char gender;
-    public  Author(String n,String e,char g){
-        this.gender=g;
-        this.email=e;
-        this.name=n;
+
+    public Author(String n, String e, char g) {
+        this.gender = g;
+        this.email = e;
+        this.name = n;
     }
+
     public String getName() {
         return name;
     }

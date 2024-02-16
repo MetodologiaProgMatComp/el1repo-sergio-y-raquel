@@ -1,9 +1,9 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Employee {
-    private int id;
-    private String firstName;
-    private String lastName;
+    private final int id;
+    private final String firstName;
+    private final String lastName;
     private int salary;
 
     ////////////////////
@@ -26,8 +26,9 @@ public class Employee {
     public String getLastName() {
         return lastName;
     }
-    public String getName(){
-        return firstName+" "+lastName;
+
+    public String getName() {
+        return firstName + " " + lastName;
     }
 
     public int getSalary() {
@@ -37,17 +38,19 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
-    public int getAnnualSalary(){
-        return salary*12;
+
+    public int getAnnualSalary() {
+        return salary * 12;
     }
-    public double raiseSalary(double percent){
-        return salary*(percent/100)+salary;
+
+    public double raiseSalary(double percent) {
+        return salary * (percent / 100) + salary;
     }
 
     /***
      * Hemos cambiado el Main porque no funcionaba al tener que trabajar con datos decimales
      */
     public String toString() {
-        return "Employee[id= " + id +", name= "+firstName+" "+lastName+", salary= "+salary+"]";
+        return "Employee[id= " + id + ", name= " + firstName + " " + lastName + ", salary= " + salary + "]";
     }
 }

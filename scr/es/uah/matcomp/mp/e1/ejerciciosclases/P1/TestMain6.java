@@ -20,7 +20,7 @@ public class TestMain6 {
         a1.debit(500); // debit() error
         System.out.println(a1);
         // Test transfer()
-        a1.transferTo(a2,100); // toString()
+        a1.transferTo(a2, 100); // toString()
         System.out.println(a1);
         System.out.println(a2);
     }
