@@ -59,7 +59,7 @@ class AccountTest {
         assertTrue(bal2>bal1);
 
         Account c=new Account("2","Felipe");
-        int bal3=a.transferTo(b,50);
+        int bal3=c.transferTo(b,50);
         assertEquals(bal2,20050);
 
     }
