@@ -61,18 +61,40 @@ class TimeTest {
     void setTime() {
         Time time=new Time(3,5,30);
         time.setTime(14,30,23);
-
+        assertEquals(time.getHour(),14);
+        assertEquals(time.getSecond(),23);
+        assertEquals(time.getMinute(),30);
     }
 
     @Test
     void testToString() {
+        Time time1=new Time(3,5,5);
+        Time time2=new Time(10,10,10);
+        assertEquals("03:05:05",time1.toString());
+        assertEquals("10:10:10",time2.toString());
     }
 
     @Test
     void nextSecond() {
+        Time time1=new Time(3,5,5);
+        Time sumaSegundo=time1.nextSecond();
+        Time time2=new Time(3,5,6);
+        assertEquals(time2.toString(),sumaSegundo.toString());
+
+        Time time3=new Time(23,59,59);
+        Time time4=new Time(0,0,0);
+        assertEquals(time4.toString(),time3.nextSecond().toString());
     }
 
     @Test
     void previousSecond() {
+        Time time1=new Time(3,5,5);
+        Time sumaSegundo=time1.previousSecond();
+        Time time2=new Time(3,5,4);
+        assertEquals(time2.toString(),sumaSegundo.toString());
+
+        Time time4=new Time(0,0,0);
+        Time time3=new Time(23,59,59);
+        assertEquals(time3.toString(),time4.previousSecond().toString());
     }
 }

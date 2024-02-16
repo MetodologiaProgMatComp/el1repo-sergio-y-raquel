@@ -1,9 +1,9 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P1;
 
 public class Time {
-    int hour;
-    int minute;
-    int second;
+    private int hour;
+    private int minute;
+    private int second;
 
     ///////////////////
     public Time(int h, int m, int s) {
