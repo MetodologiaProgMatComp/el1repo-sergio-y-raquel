@@ -71,6 +71,6 @@ public class Ball {
     }
 
     public String toString() {
-        return "Ball[(" + x + "," + y + "), speed=(" + xDelta + "," + yDelta + ")]";
+        return "Ball[(" + x + ", " + y + "), speed=(" + xDelta + ", " + yDelta + ")]";
     }
 }
