@@ -15,7 +15,7 @@ public class Customer {
     ////////////////
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public String getName() {
