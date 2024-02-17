@@ -3,8 +3,8 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_7;
 import java.text.DecimalFormat;
 
 public class MyLine {
-    private MyPoint begin = new MyPoint(4, 5);
-    private MyPoint end = new MyPoint(5, 8);
+    private MyPoint begin = new MyPoint();
+    private MyPoint end = new MyPoint();
 
     /////////////////////////////////////////////////////////////////////
     public MyLine(int x1, int y1, int x2, int y2) {
@@ -17,7 +17,6 @@ public class MyLine {
         this.end = end;
     }
     //////////////////////////////////////////////////////////////////
-
 
     public MyPoint getBegin() {
         return begin;
@@ -48,7 +47,7 @@ public class MyLine {
     }
 
     public void setBeginY(int y) {
-        this.begin.setX(y);
+        this.begin.setY(y);
     }
 
     public int getEndX() {
@@ -92,10 +91,7 @@ public class MyLine {
     }
 
     public double getLength() {
-        DecimalFormat df = new DecimalFormat("#.00");
-        double lenght = begin.distance(end);
-        String lengthRounded = df.format(lenght);
-        return Double.parseDouble(lengthRounded);
+        return begin.distance(end);
     }
 
     public double getGradient() {
@@ -109,6 +105,6 @@ public class MyLine {
         int y1 = this.getBeginY();
         int x2 = this.getEndX();
         int y2 = this.getEndY();
-        return String.format("MyLine[begin=(%s,&s), end(%s,%s)]", x1, y1, x2, y2);
+        return String.format("MyLine[begin=(%s,%s), end(%s,%s)]", x1, y1, x2, y2);
     }
 }
