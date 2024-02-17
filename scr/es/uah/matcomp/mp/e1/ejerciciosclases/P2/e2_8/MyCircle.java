@@ -10,6 +10,11 @@ public class MyCircle {
         this.radius = 1;
     }
 
+    public MyCircle(int x, int y, int radius) {
+        this.center = new MyPoint(x,y);
+        this.radius = radius;
+    }
+
     public MyCircle(MyPoint center, int radius) {
         this.center = center;
         this.radius = radius;
