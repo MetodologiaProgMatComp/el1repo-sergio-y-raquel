@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_6;
 
+import java.text.DecimalFormat;
+
 public class TestMain {
     public static void main(String[] args) {
         //Example distance(x,y)
@@ -34,5 +36,19 @@ public class TestMain {
         System.out.println(p5.distance(5, 6)); // which version?
         System.out.println(p5.distance()); // which version?
 
+        ///////////////Matriz//////////////////
+        MyPoint[] points = new MyPoint[10];
+        for (int i = 0; i < 10; i++){
+            points[i] = new MyPoint(i+1,i+1);
+        }
+            for(int i = 0; i < 10; i++) {
+                for(int j = 0; j < 10; j++) {
+                    double distance = points[i].distance(points[j]);
+                    DecimalFormat df = new DecimalFormat("#.00");
+                    String distanceRounded = df.format(distance);
+                    System.out.println(distanceRounded);
+                }
+                System.out.println();
+            }
     }
 }

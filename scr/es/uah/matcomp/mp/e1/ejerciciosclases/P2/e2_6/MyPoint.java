@@ -62,5 +62,4 @@ public class MyPoint {
     public double distance() {
         return Math.sqrt(x*x + y*y);
     }
-
 }
