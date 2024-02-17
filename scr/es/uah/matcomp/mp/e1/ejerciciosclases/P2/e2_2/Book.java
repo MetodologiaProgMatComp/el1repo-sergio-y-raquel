@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.P2.AutorMultiple;
+package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_2;
 
 import java.util.Arrays;
 
@@ -56,10 +56,10 @@ public class Book {
 
     public String getAuthorNames() {
         int contador = 0;
-        String nombres = null;
+        String nombres = "";
         while (authors[contador] != null) {
             String nombre = authors[contador].getName();
-            nombres += "," + nombre;
+            nombres += "{" + nombre + "}";
             contador++;
         }
         return nombres;
