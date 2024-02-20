@@ -107,4 +107,5 @@ public class MyLine {
         int y2 = this.getEndY();
         return String.format("MyLine[begin=(%s,%s), end(%s,%s)]", x1, y1, x2, y2);
     }
+
 }

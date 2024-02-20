@@ -46,12 +46,7 @@ public class Book {
     }
 
     public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", author=" + Arrays.toString(authors) +
-                ", price=" + price +
-                ", qty=" + qty +
-                '}';
+        return String.format("Book{name=%s, author=%s, price=%s, qty=%s}",name, Arrays.toString(authors),price,qty);
     }
 
     public String getAuthorNames() {
