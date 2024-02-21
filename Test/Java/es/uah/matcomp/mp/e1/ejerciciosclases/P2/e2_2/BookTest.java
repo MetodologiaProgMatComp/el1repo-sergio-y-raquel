@@ -68,7 +68,7 @@ class BookTest {
         Author a2 = new Author("Lorena","lore@niidea.com",'f' );
         Author[] authors = new Author[]{a1,a2};
         Book b1 = new Book("Libro 1", authors, 20.0,5);
-        assertEquals(b1,"Book{name=Libro 1, author=[Author{name= Felipe, email= feli@niidea.com, gender= m}, Author{name= Lorena, email= lore@niidea.com, gender= f}], price=20.0, qty=5}");
+        assertEquals(b1.toString(),"Book{name=Libro 1, author=[Author{name= Felipe, email= feli@niidea.com, gender= m}, Author{name= Lorena, email= lore@niidea.com, gender= f}], price=20.0, qty=5}");
     }
 
     @Test

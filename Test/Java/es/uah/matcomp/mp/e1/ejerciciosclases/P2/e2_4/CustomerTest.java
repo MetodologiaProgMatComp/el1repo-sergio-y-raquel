@@ -34,7 +34,7 @@ class CustomerTest {
     @Test
     void testToString() {
         Customer c1 = new Customer(1, "Felipe", 20);
-        assertEquals(c1, "Felipe(1)(20%)");
+        assertEquals(c1.toString(), "Felipe(1)(20%)");
 
     }
 }
