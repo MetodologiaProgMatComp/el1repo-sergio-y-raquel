@@ -38,6 +38,12 @@ public class MyPoint {
         return ints;
     }
 
+    public String getArrayToString(double[] lista){
+        double x = lista[0];
+        double y = lista[1];
+        return String.format("{%s,%s}",x,y);
+    }
+
     public void setXY(double x, double y){
         this.x = x;
         this.y = y;

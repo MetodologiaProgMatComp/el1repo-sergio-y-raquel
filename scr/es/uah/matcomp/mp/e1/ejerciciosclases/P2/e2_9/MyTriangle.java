@@ -20,7 +20,10 @@ public class MyTriangle {
     ////////////////////////////////////////////////////////////////////////////
 
     public String toString() {
-        return String.format("MyTriangle[v1=%s], v2=%s], v3=%s]]", v1.getXY(), v2.getXY(), v3.getXY());
+        String v1str = v1.getArrayToString(v1.getXY());
+        String v2str = v2.getArrayToString(v2.getXY());
+        String v3str = v3.getArrayToString(v3.getXY());
+        return String.format("MyTriangle[v1=%s], v2=%s], v3=%s]]", v1str, v2str, v3str);
     }
 
     public double getPerimeter() {

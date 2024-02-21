@@ -73,6 +73,12 @@ public class MyLine {
         return ints;
     }
 
+    public String getArrayToString(int[] lista){
+        int x = lista[0];
+        int y = lista[1];
+        return String.format("{%s,%s}",x,y);
+    }
+
     public void setBeginXY(int x, int y) {
         this.setBeginX(x);
         this.setBeginY(y);

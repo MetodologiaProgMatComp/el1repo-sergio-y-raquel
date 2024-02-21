@@ -5,12 +5,13 @@ import es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_7.MyLine;
 public class TestMain {
     public static void main(String[] args) {
         MyCircle c1= new MyCircle();
+        int[] lcenter = c1.getCenterXY();
         System.out.println(c1+"\n"+
                 c1.getRadius()+"\n"+
                 c1.getCenter()+"\n"+
                 c1.getCenterX()+"\n"+
                 c1.getCenterY()+"\n"+
-                c1.getCenterXY()+"\n");
+                c1.getArrayToString(lcenter)+"\n");
         System.out.println(c1.getArea());
         System.out.println(c1.getCircumference()+"\n");
 

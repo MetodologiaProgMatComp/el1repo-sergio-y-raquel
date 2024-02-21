@@ -25,7 +25,7 @@ public class Book {
         return name;
     }
 
-    public Author[] getAuthor() {
+    public Author[] getAuthors() {
         return authors;
     }
 
@@ -52,7 +52,8 @@ public class Book {
     public String getAuthorNames() {
         int contador = 0;
         String nombres = "";
-        while (authors[contador] != null) {
+        int lenght = authors.length;
+        while (contador < lenght) {
             String nombre = authors[contador].getName();
             nombres += "{" + nombre + "}";
             contador++;
