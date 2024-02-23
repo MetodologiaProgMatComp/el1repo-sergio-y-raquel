@@ -64,7 +64,7 @@ public class MyCircle {
     public String getArrayToString(int[] lista){
         int x = lista[0];
         int y = lista[1];
-        return String.format("{%s,%s}",x,y);
+        return String.format("(%s,%s)",x,y);
     }
 
     public void setCenterXY(int x, int y) {

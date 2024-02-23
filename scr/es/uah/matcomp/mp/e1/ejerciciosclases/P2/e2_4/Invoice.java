@@ -51,6 +51,6 @@ public class Invoice {
         return amount;
     }
     public String toString() {
-        return String.format("Invoice[id=%s, customer=%s, amount=%s",id,customer,amount);
+        return String.format("Invoice[id=%s, customer=%s, amount=%s]",id,customer,amount);
     }
 }
