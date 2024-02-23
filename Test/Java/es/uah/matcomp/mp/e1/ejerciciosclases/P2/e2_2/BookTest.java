@@ -2,6 +2,8 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_2;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
@@ -21,8 +23,21 @@ class BookTest {
         Author a2 = new Author("Lorena","lore@niidea.com",'f' );
         Author[] authors = new Author[]{a1,a2};
         Book b1 = new Book("Libro 1", authors, 20.0);
-        assertEquals(b1.getAuthor(),"[Les.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_2.Author;@664613");
+        Author[] autores= b1.getAuthors();
+        assertEquals(Arrays.toString(autores),b1.authorsToString());
     }
+
+    @Test
+    void authorsToString(){
+        Author a1 = new Author("Felipe","feli@niidea.com",'m');
+        Author a2 = new Author("Lorena","lore@niidea.com",'f' );
+        Author[] authors = new Author[]{a1,a2};
+        Book b1 = new Book("Libro 1", authors, 20.0);
+        Author[] autores= b1.getAuthors();
+        assertEquals(b1.authorsToString(), Arrays.toString(autores));
+    }
+
+
 
     @Test
     void getPrice() {
