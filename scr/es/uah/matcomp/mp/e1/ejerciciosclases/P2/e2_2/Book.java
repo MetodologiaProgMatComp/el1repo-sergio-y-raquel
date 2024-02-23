@@ -29,6 +29,20 @@ public class Book {
         return authors;
     }
 
+    public String authorsToString() {
+        int contador = 0;
+        String autores = "[";
+        int lenght = authors.length;
+        while (contador < lenght) {
+            String autor = authors[contador].toString();
+            autores += "" + autor + ", ";
+            contador++;
+        }
+        autores = autores.substring(0,autores.length()-2);
+        autores += "]";
+        return autores;
+    }
+
     public Double getPrice() {
         return price;
     }
