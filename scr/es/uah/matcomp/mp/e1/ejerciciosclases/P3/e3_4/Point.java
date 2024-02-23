@@ -1,14 +1,14 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.P3.e3_3;
+package es.uah.matcomp.mp.e1.ejerciciosclases.P3.e3_4;
 
-public class Point2D {
+public class Point {
     private float x=0.0f;
     private float y=0.0f;
 
     //////////////////
-    public Point2D() {
+    public Point() {
     }
 
-    public Point2D(float x, float y) {
+    public Point(float x, float y) {
         this.x = x;
         this.y = y;
     }

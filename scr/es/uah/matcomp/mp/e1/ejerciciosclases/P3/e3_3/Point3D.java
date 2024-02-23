@@ -30,7 +30,7 @@ public class Point3D extends Point2D{
     }
 
     public float[] getXYZ(){
-        return new float[]{x,y,z};
+        return new float[]{super.getX(),super.getY(),z};
     }
 
     @Override
