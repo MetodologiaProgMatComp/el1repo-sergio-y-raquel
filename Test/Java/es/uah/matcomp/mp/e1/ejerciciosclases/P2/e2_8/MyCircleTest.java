@@ -21,10 +21,10 @@ class MyCircleTest {
 
     @Test
     void getCenter() {
-        MyCircle c1 = new MyCircle();
+        MyCircle c1 = new MyCircle(new MyPoint(0,0),1);
         MyPoint center = c1.getCenter();
         MyPoint pWanted = new MyPoint(0,0);
-        assertEquals(c1.getArrayToString(center.getXY()), pWanted.getArrayToString(pWanted.getXY()));
+        assertEquals(center.toString(), pWanted.toString());
     }
 
     @Test
@@ -32,7 +32,8 @@ class MyCircleTest {
         MyCircle c1 = new MyCircle();
         c1.setCenter(new MyPoint(1,2));
         MyPoint center = c1.getCenter();
-        assertEquals(c1.getArrayToString(center.getXY()), new MyPoint(1,2));
+        MyPoint pWanted = new MyPoint(1,2);
+        assertEquals(center.toString(), pWanted.toString());
     }
 
     @Test
@@ -65,14 +66,17 @@ class MyCircleTest {
     void getCenterXY() {
         MyCircle c1 = new MyCircle();
         MyPoint center = c1.getCenter();
-        assertEquals(c1.getArrayToString(center.getXY()), new MyPoint(0,0));
+        MyPoint pWanted = new MyPoint(0,0);
+        assertEquals(c1.getArrayToString(c1.getCenterXY()),pWanted.toString() );
     }
 
     @Test
     void getArrayToString() {
         MyCircle c1 = new MyCircle();
+        c1.setCenterXY(1,2);
         MyPoint center = c1.getCenter();
-        assertEquals(c1.getArrayToString(center.getXY()), new MyPoint(0,0));
+        MyPoint pWanted = new MyPoint(1,2);
+        assertEquals(c1.getArrayToString(center.getXY()), pWanted.toString());
     }
 
     @Test
@@ -80,7 +84,8 @@ class MyCircleTest {
         MyCircle c1 = new MyCircle();
         c1.setCenterXY(1,2);
         MyPoint center = c1.getCenter();
-        assertEquals(c1.getArrayToString(center.getXY()), new MyPoint(1,2));
+        MyPoint pWanted = new MyPoint(1,2);
+        assertEquals(c1.getArrayToString(center.getXY()), pWanted.toString());
     }
 
     @Test
@@ -97,8 +102,9 @@ class MyCircleTest {
 
     @Test
     void getCircumference() {
-        MyCircle c1 = new MyCircle();
-        assertEquals(c1.getArea(), 2*Math.PI);
+        MyCircle c1 = new MyCircle(0,0,1);
+        double areaWanted = 2*(Math.PI);
+        assertEquals(c1.getCircumference(), areaWanted);
     }
 
     @Test

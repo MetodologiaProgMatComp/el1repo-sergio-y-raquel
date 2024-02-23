@@ -21,7 +21,7 @@ class BookTest {
         Author a2 = new Author("Lorena","lore@niidea.com",'f' );
         Author[] authors = new Author[]{a1,a2};
         Book b1 = new Book("Libro 1", authors, 20.0);
-        assertEquals(b1.getAuthor(),"[Les.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_2.Author;@664613");
+        assertEquals(b1.getAuthors(),"[Les.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_2.Author;@664613");
     }
 
     @Test
