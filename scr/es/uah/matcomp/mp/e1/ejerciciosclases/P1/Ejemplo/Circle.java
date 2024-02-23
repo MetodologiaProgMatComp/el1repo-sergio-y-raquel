@@ -40,8 +40,6 @@ public class Circle {
         return radius * radius * Math.PI;
     }
 
-    //Setters
-
     public String getColor() {
         return color;
     }
