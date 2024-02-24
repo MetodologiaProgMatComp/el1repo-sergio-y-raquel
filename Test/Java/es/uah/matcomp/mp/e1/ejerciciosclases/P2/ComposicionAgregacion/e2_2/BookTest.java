@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_2;
+package es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_2;
 
 import es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_2.Author;
 import es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_2.Book;

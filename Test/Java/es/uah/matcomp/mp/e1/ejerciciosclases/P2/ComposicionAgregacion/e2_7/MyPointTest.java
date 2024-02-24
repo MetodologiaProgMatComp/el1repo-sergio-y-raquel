@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_7;
+package es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_7;
 
 import es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_7.MyPoint;
 import org.junit.jupiter.api.Test;

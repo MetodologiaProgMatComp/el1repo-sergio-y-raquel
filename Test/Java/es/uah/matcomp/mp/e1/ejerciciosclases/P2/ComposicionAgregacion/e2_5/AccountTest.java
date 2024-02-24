@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_5;
+package es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_5;
 
 import es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_5.Account;
 import es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_5.Customer;
