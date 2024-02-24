@@ -1,5 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P2.e2_1;
 
+import es.uah.matcomp.mp.e1.ejerciciosclases.P2.ComposicionAgregacion.e2_1.Author;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
