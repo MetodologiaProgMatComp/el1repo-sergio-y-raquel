@@ -31,9 +31,12 @@ class Point3DTest {
     @Test
     void getXYZ() {
         Point3D p1= new Point3D(3f,3f,3f);
+        assertEquals("{3.0,3.0,3.0}",p1.getArrayToString(p1.getXYZ()));
     }
 
     @Test
     void testToString() {
+        Point3D p1 = new Point3D();
+        assertEquals("(0.0,0.0,0.0)",p1.toString());
     }
 }

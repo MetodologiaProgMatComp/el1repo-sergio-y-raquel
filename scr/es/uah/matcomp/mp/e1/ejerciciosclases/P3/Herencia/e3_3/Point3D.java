@@ -33,6 +33,12 @@ public class Point3D extends Point2D{
         return new float[]{super.getX(),super.getY(),z};
     }
 
+    public String getArrayToString(float[] lista){
+        float x=lista[0];
+        float y=lista[1];
+        float z=lista[2];
+        return "{"+x+","+y+","+z+"}";
+    }
     @Override
     public String toString(){
         return "("+super.getX()+","+super.getY()+","+z+")";
