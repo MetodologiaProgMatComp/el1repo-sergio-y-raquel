@@ -1,9 +1,9 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P3.Herencia.e3_2;
 
 public class Student extends Person {
-    String program;
-    Integer year;
-    double fee;
+    private String program;
+    private Integer year;
+    private double fee;
 
     ///////////////
     public Student(String name, String address, String program, int year, double fee) {

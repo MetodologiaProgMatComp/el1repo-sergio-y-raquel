@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P3.Herencia.e3_2;
 
 public class Staff extends Person{
-    String school;
-    double pay;
+    private String school;
+    private double pay;
 
     /////////////
     public Staff(String name, String address, String school, double pay) {
