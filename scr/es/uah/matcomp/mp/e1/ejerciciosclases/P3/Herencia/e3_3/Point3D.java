@@ -8,7 +8,6 @@ public class Point3D extends Point2D{
         super(x, y);
         this.z = z;
     }
-
     public Point3D() {
         super();
     }
