@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P3.Herencia.e3_5;
 
 public class Shape {
-    String color="red";
-    boolean filled=true;
+    private String color="red";
+    private boolean filled=true;
 
     /////////////
     public Shape() {

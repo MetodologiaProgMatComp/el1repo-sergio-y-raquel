@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P3.Herencia.e3_5;
 
 public class Rectangle extends Shape {
-    double width = 1.0;
-    double length = 1.0;
+    private double width = 1.0;
+    private double length = 1.0;
 
     /////////////
     public Rectangle() {

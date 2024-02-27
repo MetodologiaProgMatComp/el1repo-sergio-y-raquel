@@ -1,7 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P3.Herencia.e3_5;
 
 public class Circle extends Shape {
-    double radius=1.0;
+    private double radius=1.0;
 
     ///////////////
     public Circle() {
