@@ -35,6 +35,12 @@ public class Point {
         this.y=y;
     }
 
+    public String getArrayToString(float[] lista){
+        float x = lista[0];
+        float y = lista[1];
+        return String.format("{%s,%s}",x,y);
+    }
+
     public float[] getXY(){
         return new float[]{x,y};
     }

@@ -41,6 +41,11 @@ public class MovablePoint extends Point {
         this.ySpeed=ySpeed;
     }
 
+    public String getArrayToString(float[] lista) {
+        float x = lista[0];
+        float y = lista[1];
+        return String.format("{%s,%s}", x, y);
+    }
     public float[] getSpeed(){
         return new float[]{xSpeed,ySpeed};
     }
