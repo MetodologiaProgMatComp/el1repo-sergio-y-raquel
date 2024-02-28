@@ -35,4 +35,8 @@ public class Point {
         this.x = x;
         this.y = y;
     }
+
+    public int[] getXY() {
+        return new int[]{x, y};
+    }
 }

@@ -72,7 +72,7 @@ public class Line {
     }
 
 
-    public double getLenght(){
+    public double getLength() {
         int xDiff=getBeginX()-getEndX();
         int yDiff=getBeginY()-getEndY();
         return Math.sqrt(xDiff*xDiff+yDiff*yDiff);

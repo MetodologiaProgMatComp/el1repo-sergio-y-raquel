@@ -9,7 +9,7 @@ public class TestLine {
         Point p2=new Point(9,0);
         Line l2=new Line(p1,p2);
         System.out.println(l2);
-        System.out.println(l2.getLenght());
+        System.out.println(l2.getLength());
         System.out.println(l2.getGradient());
     }
 }
