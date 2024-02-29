@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P3.Herencia.e3_4;
 
 public class MovablePoint extends Point {
-    float xSpeed = 0.0f;
-    float ySpeed = 0.0f;
+    private float xSpeed = 0.0f;
+    private float ySpeed = 0.0f;
 
     public MovablePoint(float x, float y, float xSpeed, float ySpeed) {
         super(x, y);
