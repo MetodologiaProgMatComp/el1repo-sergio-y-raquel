@@ -19,12 +19,12 @@ public class MovablePoint implements Movable{
 
     @Override
     public void moveUP() {
-        y-=ySpeed;
+        y+=ySpeed;
     }
 
     @Override
     public void moveDown() {
-        y+=ySpeed;
+        y-=ySpeed;
     }
 
     @Override

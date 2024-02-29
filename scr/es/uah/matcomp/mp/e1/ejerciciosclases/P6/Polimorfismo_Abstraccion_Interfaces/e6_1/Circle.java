@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.P6.Polimorfismo_Abstraccion_Interfaces.e6_1;
 
 public class Circle extends Shape{
-    protected double radius=1.0;
 
+    protected double radius=1.0;
 
     ///////////////
     public Circle() {
