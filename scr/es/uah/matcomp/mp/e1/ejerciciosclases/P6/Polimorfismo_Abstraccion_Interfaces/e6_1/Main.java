@@ -8,7 +8,7 @@ public class Main {
         System.out.println(s1.getPerimeter()); // which version?
         System.out.println(s1.getColor());
         System.out.println(s1.isFilled());
-        System.out.println(s1.getRadius());
+        // ERROR A POSTA System.out.println(s1.getRadius());
         Circle c1 = (Circle)s1; // Downcast back to Circle
         System.out.println(c1);
         System.out.println(c1.getArea());
@@ -16,13 +16,13 @@ public class Main {
         System.out.println(c1.getColor());
         System.out.println(c1.isFilled());
         System.out.println(c1.getRadius());
-        Shape s2 = new Shape();
+        // ERROR A POSTAShape s2 = new Shape();
         Shape s3 = new Rectangle("red", false, 1.0, 2.0); // Upcast
         System.out.println(s3);
         System.out.println(s3.getArea());
         System.out.println(s3.getPerimeter());
         System.out.println(s3.getColor());
-        System.out.println(s3.getLength());
+        // ERROR A POSTA System.out.println(s3.getLength());
         Rectangle r1 = (Rectangle)s3; // downcast
         System.out.println(r1);
         System.out.println(r1.getArea());
@@ -32,14 +32,14 @@ public class Main {
         System.out.println(s4);
         System.out.println(s4.getArea());
         System.out.println(s4.getColor());
-        System.out.println(s4.getSide());
+        // ERROR A POSTA System.out.println(s4.getSide());
 // Take note that we downcast Shape s4 to Rectangle,
 // which is a superclass of Square, instead of Square
         Rectangle r2 = (Rectangle)s4;
         System.out.println(r2);
         System.out.println(r2.getArea());
         System.out.println(r2.getColor());
-        System.out.println(r2.getSide());  // EN EL RECTANGULO NO HAY NINGUN MÉTODO GETSIDE
+        // ERROR A POSTA System.out.println(r2.getSide());  // EN EL RECTANGULO NO HAY NINGUN MÉTODO GETSIDE
         System.out.println(r2.getLength());
 // Downcast Rectangle r2 to Square
         Square sq1 = (Square)r2;
