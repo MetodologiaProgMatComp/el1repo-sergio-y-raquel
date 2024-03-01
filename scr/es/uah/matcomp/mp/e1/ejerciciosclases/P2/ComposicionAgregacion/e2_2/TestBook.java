@@ -9,7 +9,7 @@ public class TestBook {
         // Declare and allocate a Book instance
         Book javaDummy = new Book("Java for Dummy", authors, 19.99, 99);
         System.out.println(javaDummy);//toString()
-        System.out.println(String.format("\nLos autores son: %s", javaDummy.getAuthorNames()));
+        System.out.println("Los autores son: "+javaDummy.getAuthorNames());
 
         System.out.println();
         Author a1 = new Author("Felipe","feli@niidea.com",'m');

@@ -63,10 +63,22 @@ public class Book {
         return String.format("Book{name=%s, author=%s, price=%s, qty=%s}",name, Arrays.toString(authors),price,qty);
     }
 
+    public Integer getNumeroAutores() {
+        Integer contador = 0;
+        Integer numeroAutores=0;
+        while (authors.length != contador) {
+            if (authors[contador] != null) {
+                numeroAutores++;
+            }
+            contador++;
+        }
+        return numeroAutores;
+    }
+
     public String getAuthorNames() {
         int contador = 0;
         String nombres = "";
-        int lenght = authors.length;
+        int lenght = this.getNumeroAutores();
         while (contador < lenght) {
             String nombre = authors[contador].getName();
             nombres += "{" + nombre + "}";
